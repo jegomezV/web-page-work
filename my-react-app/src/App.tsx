@@ -1,44 +1,20 @@
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
+import { Credits } from './pages/Credits';
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center'>
-      <h1 className='text-black font-bold'>Hola</h1>
-      <h1 className='text-black font-bold'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-      <h1 className='text-black'>Hola</h1>
-    </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/credits" element={<Credits />} />
+        {/* ...otros rutas... */}
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
