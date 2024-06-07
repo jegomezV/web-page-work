@@ -2,11 +2,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Reset Styles */
 body {
   @apply font-sans;
   @apply overflow-x-hidden;
   @apply min-h-screen;
   @apply relative;
+  @apply overflow-y-auto;
 }
 
 * {
@@ -14,3 +16,9 @@ body {
   @apply p-0;
   @apply box-border;
 }
+
+@layer components {
+  .wrapper {
+    @apply w-[80%] mx-auto overflow-hidden max-w-screen-xl;
+  };
+};
