@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from '../components/Nav';
 /* import { PrincipalVideo } from '../components/media/PrincipalVideo'; */
-import { ModuleParallax } from '../components/Parallax';
+import { Parallax } from 'react-scroll-parallax'
 import { PrincipalVideo } from '../components/media/PrincipalVideo';
 import { ButtonStart } from '../components/ButtonStart';
 import { Footer } from '../components/Footer';
@@ -15,17 +15,20 @@ export const Home: React.FC = (): JSX.Element => {
       <div className='relative w-screen h-full'>
         <ButtonStart />
         {/* <PrincipalVideo /> */}
-        <ModuleParallax>
+        <Parallax speed={-100}>
           <PrincipalVideo />
-        </ModuleParallax>
+        </Parallax>
 
         {/* Header section containing the navigation and introductory content */}
         <header className='fixed z-20 top-0 h-full'>
-          <Nav/>
+          <Parallax scaleY={[10, 0]}>
+            <Nav/>
+          </Parallax>
+          
         </header>
 
         <main className='relative w-[80%] mx-auto'>
-        <ModuleParallax>
+        <Parallax>
           <CardSpotlight configs=''>
           <section className='relative w-full min-h-screen mx-auto m-10 rounded-xl z-30 grid grid-cols-1 gap-3'>
             <article className='flex mx-auto p-10 justify-center text-center items-center flex-wrap m-4'>
@@ -43,9 +46,9 @@ export const Home: React.FC = (): JSX.Element => {
             </article>
           </section>
           </CardSpotlight>
-          </ModuleParallax>
+          </Parallax>
 
-          <ModuleParallax>
+          <Parallax>
           <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
             <CardAnimatedBorderGradient configs="row-span-3">
               1
@@ -60,7 +63,24 @@ export const Home: React.FC = (): JSX.Element => {
               4
             </CardAnimatedBorderGradient>
           </section>
-          </ModuleParallax>
+          </Parallax>
+
+          <Parallax>
+          <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
+            <CardAnimatedBorderGradient configs="row-span-3">
+              1
+            </CardAnimatedBorderGradient >
+            <CardAnimatedBorderGradient configs="row-span-2">
+              2
+            </CardAnimatedBorderGradient>
+            <CardAnimatedBorderGradient configs="">
+              3
+            </CardAnimatedBorderGradient>
+            <CardAnimatedBorderGradient configs="row-start-4 row-span-2 col-span-2">
+              4
+            </CardAnimatedBorderGradient>
+          </section>
+          </Parallax>
         </main>
 
         {/* Footer section */}

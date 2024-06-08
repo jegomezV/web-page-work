@@ -34,10 +34,10 @@ export const PrincipalVideo: React.FC = (): JSX.Element => {
 
   // Render the component
   return (
-    <div className="relative border-b-[1px] w-screen h-screen overflow-hidden">
+    <div className="relative  w-screen h-screen overflow-hidden">
       <video
         ref={videoRef}
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-screen h-[100%] object-cover"
         src={videos[currentVideoIndex]}
         autoPlay
         muted
