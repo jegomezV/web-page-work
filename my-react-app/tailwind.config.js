@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -12,6 +14,9 @@ export default {
         'color-bg3': '#0B1726',
         'color-white': '#EBF0F2',
         'color-pink': '#A68D85',
+      },
+      fontFamily: {
+        'sans': ['Quicksand', ...defaultTheme.fontFamily.sans],
       },
     },
   },
