@@ -10,7 +10,7 @@ export const ButtonStart: React.FC = (): JSX.Element => {
     <>
       <button 
         onClick={scrollToTop}
-        className="fixed z-40 bottom-12 right-10 border-[1px] border-white -rotate-90 group inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-neutral-950 font-medium text-neutral-200"
+        className="fixed z-40 bottom-12 right-10 border-[1px] border-white -rotate-90 group inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-neutral-950 font-medium text-neutral-200"
         aria-label="Scroll to top"
       >
         <div className="duration-200 translate-x-0 transition group-hover:translate-x-[300%]">
