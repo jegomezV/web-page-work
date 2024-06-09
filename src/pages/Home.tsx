@@ -3,16 +3,18 @@ import { Nav } from '../components/Nav';
 /* import { PrincipalVideo } from '../components/media/PrincipalVideo'; */
 import { Parallax } from 'react-scroll-parallax'
 import { PrincipalVideo } from '../components/media/PrincipalVideo';
-import { ButtonStart } from '../components/ButtonStart';
+import { ButtonStart } from '../components/buttons/ButtonStart';
 import { Footer } from '../components/Footer';
 import { CardAnimatedBorderGradient } from '../components/CardAnimatedBorderGradient';
 import { CardSpotlight } from '../components/CardSpotlight ';
+import { ThemeButton } from '../components/buttons/ThemeButton';
 
 export const Home: React.FC = (): JSX.Element => {
   return (
     <>
       {/* Main container for the application */}
       <div className='relative w-screen h-full'>
+        <ThemeButton />
         <ButtonStart />
         {/* <PrincipalVideo /> */}
         <Parallax speed={-36.4} scale={[0, 2]}>
