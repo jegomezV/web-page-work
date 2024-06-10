@@ -36,7 +36,7 @@ export const Home: React.FC = (): JSX.Element => {
                   <div className="group relative w-full h-full text-neutral-950">
                     <h1 className='text-center text-6xl mb-7 text-white'>Where is the</h1>
                     <div className="overflow-hidden">
-                      <div className="-translate-y-2 -translate-x-14 mx-auto skew-y-0 text-6xl text-center text-white transition duration-500 group-hover:-translate-y-[112%] group-hover:skew-y-12">&rarr; Art</div>
+                      <div className="-translate-y-2 -translate-x-14 mx-auto skew-y-0 text-6xl text-center text-white transition duration-500 group-hover:-translate-y-[115%] group-hover:skew-y-12">&rarr; Art</div>
                       <div className="relative text-white translate-y-[250%] text-right text-5xl skew-y-12 transition duration-500 group-hover:-translate-y-8 group-hover:-translate-x-60 group-hover:skew-y-0"> &rarr; Beauty</div>
                     </div>
                   </div>
