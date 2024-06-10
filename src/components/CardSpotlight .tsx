@@ -48,7 +48,7 @@ export const CardSpotlight: React.FC<CardSpotlightProps> = ({ children, configs 
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${configs} relative mx-auto flex h-[80%] w-[80%] z-50 items-center justify-center overflow-hidden rounded-xl border border-gray-800 bg-transparent backdrop-blur-3xl px-8 py-16 shadow-2xl`}
+      className={`${configs} relative mx-auto flex h-[80%] w-full hover:shadow-sm hover:shadow-white z-50 items-center justify-center overflow-hidden rounded-xl border border-gray-800 bg-transparent backdrop-blur-3xl px-8 py-16 shadow-2xl`}
     >
       <div
         className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'

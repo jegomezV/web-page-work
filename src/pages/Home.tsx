@@ -20,7 +20,7 @@ export const Home: React.FC = (): JSX.Element => {
           <Parallax speed={-36.4} >
             <PrincipalVideo />
           </Parallax>
-          <div className='fixed z-10 top-0 w-[80%]'>
+          <div className='fixed z-10 top-0 w-full'>
             <Nav />
           </div>
           
@@ -37,13 +37,6 @@ export const Home: React.FC = (): JSX.Element => {
                   <h2 className='text-xl font-bold'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac massa dignissim, posuere ex id, commodo urna. Integer varius diam dui, ac pretium ipsum condimentum a. Proin laoreet efficitur velit ac finibus. In aliquet felis quis arcu posuere, vel pulvinar odio dignissim. Maecenas convallis pharetra placerat. Vestibulum in luctus est, eget pretium quam. Curabitur at dui in quam posuere aliquet eu sit amet diam. Curabitur accumsan interdum blandit. Cras sapien ipsum, congue id egestas vel, aliquam in turpis.
                   </h2>
-                  <span className='text-lg'>
-                    Vivamus quam justo, porttitor commodo tempus vitae, dignissim eu nulla. Integer tempus est eu mattis pharetra. Maecenas placerat fringilla congue.
-                    In in sapien in nisl egestas imperdiet nec nec ipsum. Morbi faucibus quis nisl quis porttitor. Nulla ornare condimentum magna, eu elementum ante rhoncus vel.
-                  </span>
-                  <span className='text-lg mb-10'>
-                    Quisque ante lectus, mattis nec rutrum non, sollicitudin sit amet velit. Vivamus mollis enim non justo molestie pharetra. Sed a cursus quam, in iaculis mi. Quisque orci arcu, vehicula ac lobortis in, dictum vitae nunc. Sed diam neque, tempus vitae commodo non, ultricies vel metus. Sed sodales venenatis ex, vel auctor nibh dignissim ac.
-                  </span>
                 </article>
               </section>
             </CardSpotlight>
