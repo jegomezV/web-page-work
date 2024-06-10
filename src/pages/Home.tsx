@@ -4,10 +4,15 @@ import { Nav } from '../components/Nav';
 import { Parallax } from 'react-scroll-parallax'
 import { PrincipalVideo } from '../components/media/PrincipalVideo';
 import { ButtonStart } from '../components/buttons/ButtonStart';
-import { Footer } from '../components/Footer';
-import { CardAnimatedBorderGradient } from '../components/CardAnimatedBorderGradient';
+/* import { Footer } from '../components/Footer'; */
+/* import { CardAnimatedBorderGradient } from '../components/CardAnimatedBorderGradient'; */
 import { CardSpotlight } from '../components/CardSpotlight ';
 import { ThemeButton } from '../components/buttons/ThemeButton';
+
+// IGMS
+import firstPhoto from '../../public/Home/imgs/firstPhoto.jpg'
+import secondPhoto from '../../public/Home/imgs/secondPhoto.jpg'
+import thirdPhoto from '../../public/Home/imgs/thirdPhoto.jpg'
 
 export const Home: React.FC = (): JSX.Element => {
   return (
@@ -45,43 +50,35 @@ export const Home: React.FC = (): JSX.Element => {
             </CardSpotlight>
           </Parallax>
 
-          <Parallax speed={80}>
-            <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
-              <CardAnimatedBorderGradient configs="row-span-3">
-                1
-              </CardAnimatedBorderGradient >
-              <CardAnimatedBorderGradient configs="row-span-2">
-                2
-              </CardAnimatedBorderGradient>
-              <CardAnimatedBorderGradient configs="">
-                3
-              </CardAnimatedBorderGradient>
-              <CardAnimatedBorderGradient configs="row-start-4 row-span-2 col-span-2">
-                4
-              </CardAnimatedBorderGradient>
+          <Parallax speed={30}>
+            <section className='relative h-full mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
+              <div className='absolute w-full grid grid-cols-2'>
+                <Parallax speed={-1} translateX={[10, -8]}>
+                  <div className='relative w-full h-screen flex justify-end items-end'>
+                    <img className='w-96 translate-x-5 border-[1px] translate-y-20 z-20' src={firstPhoto} alt="Descripción de la imagen" />
+                  </div>
+                </Parallax>
+
+                <Parallax speed={-1} translateX={[-10, 6]}>
+                  <div className='relative w-full h-screen flex justify-start items-end'>
+                    <img className='w-96 border-2' src={secondPhoto} alt="Descripción de la imagen" />
+                  </div>
+                </Parallax>
+
+                <Parallax speed={-1} translateX={[-10, 8]}>
+                  <div className='relative w-full h-screen  flex justify-end items-start'>
+                    <img className='w-96 border-[1px] translate-x-60 -translate-y-40' src={thirdPhoto} alt="Descripción de la imagen" />
+                  </div>
+                </Parallax>
+
+              </div>
             </section>
           </Parallax>
 
-          <Parallax speed={5}>
-            <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
-              <CardAnimatedBorderGradient configs="row-span-3">
-                1
-              </CardAnimatedBorderGradient >
-              <CardAnimatedBorderGradient configs="row-span-2">
-                2
-              </CardAnimatedBorderGradient>
-              <CardAnimatedBorderGradient configs="">
-                3
-              </CardAnimatedBorderGradient>
-              <CardAnimatedBorderGradient configs="row-start-4 row-span-2 col-span-2">
-                4
-              </CardAnimatedBorderGradient>
-            </section>
-          </Parallax>
         </main>
 
         {/* Footer section */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

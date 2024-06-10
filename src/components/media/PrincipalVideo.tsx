@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 
 // Define the base path for the videos
-const videoPath = '/Home/';
+const videoPath = '/Home/videos/';
 
 // Define the list of videos
 const videos = [
