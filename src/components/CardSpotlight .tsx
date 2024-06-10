@@ -1,6 +1,6 @@
-'use client';
 import React, { useRef, useState } from 'react';
 import { ReactNode } from 'react';
+
 
 interface CardSpotlightProps {
   children: ReactNode;
@@ -48,16 +48,18 @@ export const CardSpotlight: React.FC<CardSpotlightProps> = ({ children, configs 
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${configs} shadow-sm hover:shadow hover:shadow-white shadow-white flex h-full w-full items-center justify-center overflow-hidden rounded-xl border border-gray-800 bg-gradient-to-r from-black to-gray-950 px-8 py-16`}
+      className={`${configs} relative mx-auto flex h-[80%] w-[80%] z-50 items-center justify-center overflow-hidden rounded-xl border border-gray-800 bg-transparent backdrop-blur-3xl px-8 py-16 shadow-2xl`}
     >
       <div
         className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'
         style={{
           opacity,
-          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,182,255,.1), transparent 40%)`,
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,255,255,.1), transparent 40%)`,
         }}
       />
       {children}
     </div>
   );
 };
+
+export default CardSpotlight;

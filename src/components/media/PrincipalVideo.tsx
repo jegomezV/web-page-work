@@ -15,7 +15,7 @@ const videos = [
 export const PrincipalVideo: React.FC = (): JSX.Element => {
   // Define a state variable for the current video index
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  
+
   // Define a ref for the video element
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -34,18 +34,16 @@ export const PrincipalVideo: React.FC = (): JSX.Element => {
 
   // Render the component
   return (
-    <div className="relative border-b-[1px] w-screen h-screen overflow-hidden">
-      <video
-        ref={videoRef}
-        className="absolute top-0 left-0 w-screen h-[100%] object-cover"
-        src={videos[currentVideoIndex]}
-        autoPlay
-        muted
-        onEnded={handleVideoEnd}
-      />
-      <div className="relative z-40 flex items-center justify-center w-full h-full bg-black bg-opacity-50">
-        <h1 className="text-5xl italic font-bold text-white"></h1>
+
+      <div className="relative border-b-[1px] w-screen h-screen overflow-hidden">
+          <video
+            ref={videoRef}
+            className="w-screen h-[100%] object-cover"
+            src={videos[currentVideoIndex]}
+            autoPlay
+            muted
+            onEnded={handleVideoEnd}
+          />
       </div>
-    </div>
   );
 };

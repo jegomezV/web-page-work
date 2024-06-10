@@ -7,6 +7,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '275px',
+      ...defaultTheme.screens,
+    },
     extend: {
       colors: {
         'color-bg1': '#02060D',

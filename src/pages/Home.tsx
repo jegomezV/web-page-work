@@ -14,71 +14,73 @@ export const Home: React.FC = (): JSX.Element => {
     <>
       {/* Main container for the application */}
       <div className='relative w-screen h-full'>
+        
+        {/* Header section containing the navigation and introductory content */}
+        <header >
+          <Parallax speed={-36.4} >
+            <PrincipalVideo />
+          </Parallax>
+          <div className='fixed z-10 top-0 w-[80%]'>
+            <Nav />
+          </div>
+          
+        </header>
         <ThemeButton />
         <ButtonStart />
-        {/* <PrincipalVideo /> */}
-        <Parallax speed={-36.4} scale={[0, 2]}>
-          <PrincipalVideo />
-        </Parallax>
-
-        {/* Header section containing the navigation and introductory content */}
-        <header className='fixed z-20 top-0 h-full'>
-            <Nav/>
-        </header>
 
         <main className='relative w-[80%] mx-auto'>
-        <Parallax>
-          <CardSpotlight configs=''>
-          <section className='relative w-full min-h-screen mx-auto m-10 rounded-xl z-30 grid grid-cols-1 gap-3'>
-            <article className='flex mx-auto p-10 justify-center text-center items-center flex-wrap m-4'>
-              <h1 className='text-center italic text-6xl mb-10'>The History.</h1>
-              <span className='text-lg'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac massa dignissim, posuere ex id, commodo urna. Integer varius diam dui, ac pretium ipsum condimentum a. Proin laoreet efficitur velit ac finibus. In aliquet felis quis arcu posuere, vel pulvinar odio dignissim. Maecenas convallis pharetra placerat. Vestibulum in luctus est, eget pretium quam. Curabitur at dui in quam posuere aliquet eu sit amet diam. Curabitur accumsan interdum blandit. Cras sapien ipsum, congue id egestas vel, aliquam in turpis.
-              </span>
-              <span className='text-lg'>
-                Vivamus quam justo, porttitor commodo tempus vitae, dignissim eu nulla. Integer tempus est eu mattis pharetra. Maecenas placerat fringilla congue.
-                In in sapien in nisl egestas imperdiet nec nec ipsum. Morbi faucibus quis nisl quis porttitor. Nulla ornare condimentum magna, eu elementum ante rhoncus vel.
-              </span>
-              <span className='text-lg mb-10'>
-                Quisque ante lectus, mattis nec rutrum non, sollicitudin sit amet velit. Vivamus mollis enim non justo molestie pharetra. Sed a cursus quam, in iaculis mi. Quisque orci arcu, vehicula ac lobortis in, dictum vitae nunc. Sed diam neque, tempus vitae commodo non, ultricies vel metus. Sed sodales venenatis ex, vel auctor nibh dignissim ac.
-              </span>
-            </article>
-          </section>
-          </CardSpotlight>
+          <Parallax>
+            <CardSpotlight configs=''>
+              <section className='relative w-full min-h-screen mx-auto m-10 rounded-xl z-30 grid grid-cols-1 gap-3'>
+                <article className='flex mx-auto p-10 justify-center text-center items-center flex-wrap m-4'>
+                  <h1 className='text-center italic text-6xl mb-10'>Where is the ? Art/Beauty</h1>
+                  <h2 className='text-xl font-bold'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac massa dignissim, posuere ex id, commodo urna. Integer varius diam dui, ac pretium ipsum condimentum a. Proin laoreet efficitur velit ac finibus. In aliquet felis quis arcu posuere, vel pulvinar odio dignissim. Maecenas convallis pharetra placerat. Vestibulum in luctus est, eget pretium quam. Curabitur at dui in quam posuere aliquet eu sit amet diam. Curabitur accumsan interdum blandit. Cras sapien ipsum, congue id egestas vel, aliquam in turpis.
+                  </h2>
+                  <span className='text-lg'>
+                    Vivamus quam justo, porttitor commodo tempus vitae, dignissim eu nulla. Integer tempus est eu mattis pharetra. Maecenas placerat fringilla congue.
+                    In in sapien in nisl egestas imperdiet nec nec ipsum. Morbi faucibus quis nisl quis porttitor. Nulla ornare condimentum magna, eu elementum ante rhoncus vel.
+                  </span>
+                  <span className='text-lg mb-10'>
+                    Quisque ante lectus, mattis nec rutrum non, sollicitudin sit amet velit. Vivamus mollis enim non justo molestie pharetra. Sed a cursus quam, in iaculis mi. Quisque orci arcu, vehicula ac lobortis in, dictum vitae nunc. Sed diam neque, tempus vitae commodo non, ultricies vel metus. Sed sodales venenatis ex, vel auctor nibh dignissim ac.
+                  </span>
+                </article>
+              </section>
+            </CardSpotlight>
           </Parallax>
 
           <Parallax speed={30}>
-          <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
-            <CardAnimatedBorderGradient configs="row-span-3">
-              1
-            </CardAnimatedBorderGradient >
-            <CardAnimatedBorderGradient configs="row-span-2">
-              2
-            </CardAnimatedBorderGradient>
-            <CardAnimatedBorderGradient configs="">
-              3
-            </CardAnimatedBorderGradient>
-            <CardAnimatedBorderGradient configs="row-start-4 row-span-2 col-span-2">
-              4
-            </CardAnimatedBorderGradient>
-          </section>
+            <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
+              <CardAnimatedBorderGradient configs="row-span-3">
+                1
+              </CardAnimatedBorderGradient >
+              <CardAnimatedBorderGradient configs="row-span-2">
+                2
+              </CardAnimatedBorderGradient>
+              <CardAnimatedBorderGradient configs="">
+                3
+              </CardAnimatedBorderGradient>
+              <CardAnimatedBorderGradient configs="row-start-4 row-span-2 col-span-2">
+                4
+              </CardAnimatedBorderGradient>
+            </section>
           </Parallax>
 
           <Parallax speed={5}>
-          <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
-            <CardAnimatedBorderGradient configs="row-span-3">
-              1
-            </CardAnimatedBorderGradient >
-            <CardAnimatedBorderGradient configs="row-span-2">
-              2
-            </CardAnimatedBorderGradient>
-            <CardAnimatedBorderGradient configs="">
-              3
-            </CardAnimatedBorderGradient>
-            <CardAnimatedBorderGradient configs="row-start-4 row-span-2 col-span-2">
-              4
-            </CardAnimatedBorderGradient>
-          </section>
+            <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
+              <CardAnimatedBorderGradient configs="row-span-3">
+                1
+              </CardAnimatedBorderGradient >
+              <CardAnimatedBorderGradient configs="row-span-2">
+                2
+              </CardAnimatedBorderGradient>
+              <CardAnimatedBorderGradient configs="">
+                3
+              </CardAnimatedBorderGradient>
+              <CardAnimatedBorderGradient configs="row-start-4 row-span-2 col-span-2">
+                4
+              </CardAnimatedBorderGradient>
+            </section>
           </Parallax>
         </main>
 
