@@ -14,7 +14,7 @@ export const Home: React.FC = (): JSX.Element => {
     <>
       {/* Main container for the application */}
       <div className='relative w-screen h-full'>
-        
+
         {/* Header section containing the navigation and introductory content */}
         <header >
           <Parallax speed={-36.4} >
@@ -23,20 +23,23 @@ export const Home: React.FC = (): JSX.Element => {
           <div className='fixed z-10 top-0 w-full'>
             <Nav />
           </div>
-          
+
         </header>
         <ThemeButton />
         <ButtonStart />
 
         <main className='relative w-[80%] mx-auto'>
-          <Parallax>
+          <Parallax scale={[1, 1]} translateX={[10, -8]}>
             <CardSpotlight configs=''>
-              <section className='relative w-full min-h-screen mx-auto m-10 rounded-xl z-30 grid grid-cols-1 gap-3'>
-                <article className='flex mx-auto p-10 justify-center text-center items-center flex-wrap m-4'>
-                  <h1 className='text-center italic text-6xl mb-10'>Where is the ? Art/Beauty</h1>
-                  <h2 className='text-xl font-bold'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac massa dignissim, posuere ex id, commodo urna. Integer varius diam dui, ac pretium ipsum condimentum a. Proin laoreet efficitur velit ac finibus. In aliquet felis quis arcu posuere, vel pulvinar odio dignissim. Maecenas convallis pharetra placerat. Vestibulum in luctus est, eget pretium quam. Curabitur at dui in quam posuere aliquet eu sit amet diam. Curabitur accumsan interdum blandit. Cras sapien ipsum, congue id egestas vel, aliquam in turpis.
-                  </h2>
+              <section className='relative w-full mx-auto rounded-full z-30 grid grid-cols-1 gap-3'>
+                <article className='flex mx-auto w-full justify-center text-center items-center flex-wrap m-4'>
+                  <div className="group relative w-full h-full text-neutral-950">
+                    <h1 className='text-center text-6xl mb-7 text-white'>Where is the</h1>
+                    <div className="overflow-hidden">
+                      <div className="-translate-y-2 -translate-x-14 mx-auto skew-y-0 text-6xl text-center text-white transition duration-500 group-hover:-translate-y-[112%] group-hover:skew-y-12">&rarr; Art</div>
+                      <div className="relative text-white translate-y-[250%] text-right text-5xl skew-y-12 transition duration-500 group-hover:-translate-y-8 group-hover:-translate-x-60 group-hover:skew-y-0"> &rarr; Beauty</div>
+                    </div>
+                  </div>
                 </article>
               </section>
             </CardSpotlight>

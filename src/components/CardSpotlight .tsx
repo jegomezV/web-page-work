@@ -48,13 +48,13 @@ export const CardSpotlight: React.FC<CardSpotlightProps> = ({ children, configs 
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${configs} relative mx-auto flex h-[80%] w-full hover:shadow-sm hover:shadow-white z-50 items-center justify-center overflow-hidden rounded-xl border border-gray-800 bg-transparent backdrop-blur-3xl px-8 py-16 shadow-2xl`}
+      className={`${configs} relative shadow-inner shadow-black duration-200 hover:duration-200 mx-auto flex h-full w-full hover:shadow-sm hover:shadow-white z-50 items-center justify-center overflow-hidden rounded-3xl border-[1px] border-white bg-transparent backdrop-blur-xl px-8 py-8`}
     >
       <div
         className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'
         style={{
           opacity,
-          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,255,255,.1), transparent 40%)`,
+          background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,255,255,.1), transparent 30%)`,
         }}
       />
       {children}
