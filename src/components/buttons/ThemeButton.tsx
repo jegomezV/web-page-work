@@ -8,11 +8,11 @@ export const ThemeButton: React.FC = (): JSX.Element => {
       aria-label="Scroll to top"
     >
       <div className="duration-200 translate-x-0 transition group-hover:translate-x-[300%]">
-        <svg className='w-6 xs:w-5 sm:w-7 md:w-9 rotate-90' enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_5_Moon"><g><path d="m484.581 416.927c-154.422 187.011-459.042 76.175-459.042-165.418 0-116.573 78.326-219.441 190.517-250.198 7.57-2.071 13.227 6.773 8.287 12.749-130.677 157.45-19.044 398.883 187.329 398.883 21.833 0 43.586-2.948 64.701-8.765 7.411-2.072 13.228 6.693 8.208 12.749z" fill="#000000" style={{ fill: 'rgb(255, 255, 255)' }}></path></g></g></svg>
+        <svg className='w-6 xs:w-5 sm:w-7 md:w-7 rotate-90' enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="_x30_5_Moon"><g><path d="m484.581 416.927c-154.422 187.011-459.042 76.175-459.042-165.418 0-116.573 78.326-219.441 190.517-250.198 7.57-2.071 13.227 6.773 8.287 12.749-130.677 157.45-19.044 398.883 187.329 398.883 21.833 0 43.586-2.948 64.701-8.765 7.411-2.072 13.228 6.693 8.208 12.749z" fill="#000000" style={{ fill: 'rgb(255, 255, 255)' }}></path></g></g></svg>
       </div>
       <div className="absolute duration-300 -translate-x-[300%] transition group-hover:translate-x-0">
         <svg
-          className="h-8"
+          className="h-8 md:w-9"
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
