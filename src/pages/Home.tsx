@@ -17,7 +17,7 @@ export const Home: React.FC = (): JSX.Element => {
 
         {/* Header section containing the navigation and introductory content */}
         <header >
-          <Parallax speed={-36.4} >
+          <Parallax speed={-20.4} >
             <PrincipalVideo />
           </Parallax>
           <div className='fixed z-10 top-0 w-full'>
@@ -29,7 +29,7 @@ export const Home: React.FC = (): JSX.Element => {
         <ButtonStart />
 
         <main className='relative w-[80%] mx-auto'>
-          <Parallax scale={[1, 1]} translateX={[10, -8]}>
+          <Parallax scale={[0.9, 1.1]} translateX={[10, -7]}>
             <CardSpotlight configs=''>
               <section className='relative w-full mx-auto rounded-full z-30 grid grid-cols-1 gap-3'>
                 <article className='flex mx-auto w-full justify-center text-center items-center flex-wrap m-4'>
@@ -45,7 +45,7 @@ export const Home: React.FC = (): JSX.Element => {
             </CardSpotlight>
           </Parallax>
 
-          <Parallax speed={30}>
+          <Parallax speed={80}>
             <section className='h-screen mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
               <CardAnimatedBorderGradient configs="row-span-3">
                 1
