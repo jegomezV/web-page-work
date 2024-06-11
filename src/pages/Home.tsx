@@ -10,9 +10,9 @@ import { CardSpotlight } from '../components/CardSpotlight ';
 import { ThemeButton } from '../components/buttons/ThemeButton';
 
 // IGMS
-import firstPhoto from '../../public/Home/imgs/firstPhoto.jpg'
-import secondPhoto from '../../public/Home/imgs/secondPhoto.jpg'
-import thirdPhoto from '../../public/Home/imgs/thirdPhoto.jpg'
+import firstPhoto from '../../public/Home/imgs/firstPhotoO.webp'
+import secondPhoto from '../../public/Home/imgs/secondPhotoO.webp'
+import thirdPhoto from '../../public/Home/imgs/thirdPhotoO.webp'
 
 export const Home: React.FC = (): JSX.Element => {
   return (
@@ -54,25 +54,20 @@ export const Home: React.FC = (): JSX.Element => {
             <section className='relative h-full mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
               <div className='absolute w-full grid grid-cols-2'>
                 <Parallax speed={-1} translateX={[10, -8]}>
-                  <div className='relative w-full h-screen flex justify-end items-end'>
-                    <img className='w-96 translate-x-5 border-[1px] translate-y-20 z-20 hover:-translate-x-10 hover:duration-500 duration-500' src={firstPhoto} alt="Descripción de la imagen" />
+                  <div className='relative flex justify-end items-end'>
+                    <img className='w-96 translate-x-5 border-[1px] translate-y-20 z-20' src={firstPhoto} alt="Descripción de la imagen" />
                   </div>
                 </Parallax>
                 
                 <Parallax speed={-1} translateX={[-10, 6]}>
-                  <div className='relative w-full h-screen flex justify-start items-end'>
-                    <img className='w-96 border-2 hover:-translate-x-10 hover:-translate-y-10 hover:duration-500 duration-500' src={secondPhoto} alt="Descripción de la imagen" />
+                  <div className='relative file:flex justify-start items-end'>
+                    <img className='w-96 border-2' src={secondPhoto} alt="Descripción de la imagen" />
                   </div>
                 </Parallax>
 
                 <Parallax speed={-1} translateX={[-10, 8]}>
-                  <div className='relative w-full h-screen  flex justify-end items-start'>
-                    <img className='w-96 border-[1px] translate-x-60 -translate-y-40 hover:translate-x-64 hover:duration-500 duration-500 z-50' src={thirdPhoto} alt="Descripción de la imagen" />
-                  </div>
-                </Parallax>
-                <Parallax speed={100} translateY={[-10, 50]}>
-                  <div className='relative w-full h-screen flex justify-end items-start'>
-                    <h1 className='text-6xl -translate-x-20 backdrop-blur-3xl p-2 border-[1px] rounded -translate-y-40'>Under Construction...</h1>
+                  <div className='relative flex justify-end items-start'>
+                    <img className='w-96 border-[1px] translate-x-60 -translate-y-40' src={thirdPhoto} alt="Descripción de la imagen" />
                   </div>
                 </Parallax>
 
