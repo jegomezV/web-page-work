@@ -10,9 +10,9 @@ import { CardSpotlight } from '../components/CardSpotlight ';
 import { ThemeButton } from '../components/buttons/ThemeButton';
 
 // IGMS
-import firstPhoto from '../../public/Home/imgs/firstPhoto.jpg'
-import secondPhoto from '../../public/Home/imgs/secondPhoto.jpg'
-import thirdPhoto from '../../public/Home/imgs/thirdPhoto.jpg'
+import firstPhoto from '../../public/Home/imgs/firstPhotoO.webp'
+import secondPhoto from '../../public/Home/imgs/secondPhotoO.webp'
+import thirdPhoto from '../../public/Home/imgs/thirdPhotoO.webp'
 
 export const Home: React.FC = (): JSX.Element => {
   return (
@@ -54,19 +54,19 @@ export const Home: React.FC = (): JSX.Element => {
             <section className='relative h-full mx-auto m-10 rounded w-full grid grid-cols-2 gap-3'>
               <div className='absolute w-full grid grid-cols-2'>
                 <Parallax speed={-1} translateX={[10, -8]}>
-                  <div className='relative w-full h-screen flex justify-end items-end'>
+                  <div className='relative flex justify-end items-end'>
                     <img className='w-96 translate-x-5 border-[1px] translate-y-20 z-20' src={firstPhoto} alt="Descripción de la imagen" />
                   </div>
                 </Parallax>
 
                 <Parallax speed={-1} translateX={[-10, 6]}>
-                  <div className='relative w-full h-screen flex justify-start items-end'>
+                  <div className='relative file:flex justify-start items-end'>
                     <img className='w-96 border-2' src={secondPhoto} alt="Descripción de la imagen" />
                   </div>
                 </Parallax>
 
                 <Parallax speed={-1} translateX={[-10, 8]}>
-                  <div className='relative w-full h-screen  flex justify-end items-start'>
+                  <div className='relative flex justify-end items-start'>
                     <img className='w-96 border-[1px] translate-x-60 -translate-y-40' src={thirdPhoto} alt="Descripción de la imagen" />
                   </div>
                 </Parallax>
